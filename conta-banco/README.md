@@ -1,5 +1,7 @@
 # ContaTerminal
 
+Sejam bem vindos!
+
 Este projeto é um exercício em **Java** que simula a criação de uma conta bancária via terminal.
 O usuário informa **agência**, **número da conta** e **nome completo**, e o programa retorna uma mensagem confirmando a criação da conta.
 
