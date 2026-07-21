@@ -18,6 +18,4 @@ public class ExemploDoWhile {
         //negando o ato de continuar tocando
         return ! atendeu;
     }
-
-
 }
