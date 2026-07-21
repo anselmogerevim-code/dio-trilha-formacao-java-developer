@@ -1,15 +1,16 @@
-## Getting Started
+🚀 DIO - Trilha Java Developer
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este repositório contém o exercício de Controle de Fluxo projeto Contador desenvolvido durante a trilha de formação Java Developer da DIO (Digital Innovation One).
+O objetivo é praticar conceitos fundamentais da linguagem Java e aplicar boas práticas de programação aprendidas da seção controle de fluxo do java.
 
-## Folder Structure
+📂 Estrutura do Projeto
+src/ → Pasta com os arquivos fonte em Java.
 
-The workspace contains two folders by default, where:
+bin/ → Pasta onde os arquivos compilados são gerados automaticamente.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+lib/ → Dependências externas (se houver).
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+A estrutura segue o padrão recomendado pelo Visual Studio Code para projetos Java.
 
 > If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
