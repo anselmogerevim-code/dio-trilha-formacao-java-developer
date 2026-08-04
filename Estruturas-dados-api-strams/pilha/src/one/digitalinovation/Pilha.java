@@ -11,7 +11,7 @@ public class Pilha {
     // Construtor da pilha
     // Inicializa a pilha como vazia
     public Pilha() {
-        this.refNoEntradaPilha = null;
+        this.refNoEntradaPilha = null; // topo começa como null
     }
 
     // Método push: insere um novo nó no topo da pilha
@@ -41,12 +41,41 @@ public class Pilha {
 
     // Método top: retorna o nó do topo sem removê-lo
     public No top() {
-        return refNoEntradaPilha;
+        return refNoEntradaPilha; // devolve a referência do topo
     }
 
     // Método isEmpty: verifica se a pilha está vazia
     public boolean isEmpty() {
         // Retorna true se o topo for null, caso contrário false
         return refNoEntradaPilha == null ? true : false;
+    }
+
+    // Sobrescreve o método toString para imprimir a pilha de forma legível
+    @Override
+    public String toString() {
+        // Cabeçalho da representação da pilha
+        String stringRetorno = "----------------\n";
+        stringRetorno += "     Pilha\n";
+        stringRetorno += "----------------\n";
+
+        // Começa a percorrer a pilha a partir do topo
+        No noAuxiliar = refNoEntradaPilha;
+
+        // Loop para percorrer todos os nós da pilha
+        while (true) {
+            if (noAuxiliar != null) {
+                // Adiciona o nó atual à string de retorno
+                stringRetorno += "[No{dado=" + noAuxiliar.getDado() + "}]\n";
+                // Avança para o próximo nó
+                noAuxiliar = noAuxiliar.getRefNo();
+            } else {
+                // Sai do loop quando não há mais nós
+                break;
+            }
+        }
+
+        // Rodapé da representação da pilha
+        stringRetorno += "================\n";
+        return stringRetorno; // retorna a string completa
     }
 }
